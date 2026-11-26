@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <div class="full-container">
+        <header>
+            <div id="frontSection">
+                <a href="#" id="loginfront">LOG IN</a>
+                <a href="#" id="registerFront">REGISTER</a>
+
+                <div>
+                    <p>Complete Your Work Before You Think what I Forgot </p>
+                </div>
+            </div> 
+        </header>
+        <!-- new user register section -->
+        <div id="registerSection" style="display: none;">
+            <form action="post">
+                <div class="name">
+                    <label for="RegisterEmail">Email : </label>
+                    <input type="email" id="RegisterEmail" name="Email" placeholder="Enter Your email" required>
+                </div>
+
+                <div class="password">
+                    <label for="RegisterPassword">Password : </label>
+                    <input type="password" name="password" id="RegisterPassword" placeholder="Enter Password" required>
+                </div>
+
+                <div class="login">
+                    <button id="RegisterBtn">Register</button>
+                    <p>
+                        Already have an account? <a href="#" id="goToLogin">Back to Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <!-- login section -->
+        <div id="loginsection" style="display: none;">
+            <form action="post">
+                <div class="name">
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" name="Email" placeholder="Enter Your email" required>
+                </div>
+
+                <div class="password">
+                    <label for="password">Password : </label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                </div>
+
+                <div class="login">
+                    <button id="loginBtn">login</button>
+                    <a href="#" id="RegsiterPage">Dont have an account?</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- todo task section -->
+        <div id="todosection" style="display: none;">
+            <button id="logoutButton">logout</button>
+            <div class="conatiner">
+                <label for="addlabel">Today To Do : </label>
+                <input type="text" id="addlabel" name="inputholder" placeholder="Enter Your task" autocomplete="off"
+                    required>
+                <button id="addBtn">Add</button>
+            </div>
+
+            <div class="conatiner">
+                <label for="date">Add Date</label>
+                <input id="date" type="date" autocomplete="off" placeholder="Enter date" required>
+            </div>
+
+            <div class="conatiner">
+                <label for="time">Time : </label>
+                <input id="time" type="time" autocomplete="off" placeholder="Enter time" required>
+            </div>
+
+            <div class="conatiner">
+                <div id="displayContainer">
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+    <script src="todo.js"></script>
+    <script src="todofront.js"></script>
+</body>
+
+</html>
